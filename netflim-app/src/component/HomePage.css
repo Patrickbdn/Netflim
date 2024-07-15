@@ -3,12 +3,12 @@
  color:var(--main-color);
 }
 
-h1{
+.Hero > h1{
     font-size: 7em;
     margin:0;
     
 }
-p{
+.Hero p{
     margin:0;
     width: 50%;
 }
