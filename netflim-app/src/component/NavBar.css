@@ -2,7 +2,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 40px;
+    padding: 40px 0;
 }
 ul{
     display: flex;
@@ -10,21 +10,23 @@ ul{
     padding: 0;
 }
 li{
-    color:white;
+    color:var(--main-color);
     margin-right: 50px;
     text-decoration: none;
     list-style-type: none;
 }
 input{
     width: 50%;
-    height: 50%;
+    border-radius: 30px;
+    padding:0.2rem;
+    border: none;
 }
 a{
-    color:white;
+    color:var(--main-color);
     text-decoration: none;
 }
 .custom{
-    color:white;
+    color:var(--main-color);
 }
 .right-nav{
     width: 100%;

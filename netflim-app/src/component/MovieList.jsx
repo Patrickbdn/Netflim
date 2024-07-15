@@ -1,17 +1,3 @@
-//import React from "react";
-//import { MovieCard } from "./MovieCard";
-
-//export const MovieList  =() => {
-  //return(
-    //<div>
-      //<p>Films populaire</p>
-      //<MovieCard/>
-    //</div>
-  //);
-//};
-
-
-
 import React, { useState, useEffect } from "react";
 import { MovieCard } from "./MovieCard";
 
@@ -51,6 +37,8 @@ const MovieList = () => {
           />
         ))}
       </div>
+=======
+
     </div>
   );
 };

@@ -1,3 +1,46 @@
+
 .Hero{
- color:white;
+ color:var(--main-color);
+}
+
+h1{
+    font-size: 7em;
+    margin:0;
+    
+}
+p{
+    margin:0;
+    width: 50%;
+}
+span{
+    position: relative;
+    top:-50px;
+    left:5px;
+    display: inline-block;
+    width: 45%;
+    height: 30px;
+    background-color: var(--complement-color);
+    z-index: -1;
+    transform: rotate(-2deg);
+}
+
+.bg-img{
+    background-image:url('../asset/Film-Review-Christopher-Nolan-Oppenheimer.jpg');
+    background-size: cover;
+    position:absolute;
+    width: 700px;
+    height: 600px;
+    top:7px;
+    left:520px;
+    z-index: -3;
+}
+
+.cover-bg-img{
+    position:absolute;
+    width: 700px;
+    height: 600px;
+    top:7px;
+    left:520px;
+    z-index: -2;
+    background: radial-gradient(circle, rgba(23,23,23,0) 8%, var(--bg-color) 65%);
 }
