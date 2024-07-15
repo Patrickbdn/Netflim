@@ -2,8 +2,11 @@ import React from "react";
 import './HomePage.css';
 import MovieList from "./MovieList";
 
+//Component uniquement pour gérer la homepage//
 export const HomePage =() => {
   
+//On retourne une div Hero, dans laquelle on retrouve 
+//Le titre, l'image, le sous-titre et la liste des films//
   return(
     <>
     <div className="Hero">
