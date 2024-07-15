@@ -1,0 +1,18 @@
+.film-container{
+    display: flex;
+    box-sizing: content-box;
+    margin-top: 10px;
+    gap:10px;
+}
+
+img{
+    width:150px;
+}
+h2{
+    color : var(--main-color);
+    font-size: 1em;
+}
+
+.content{
+    margin-top:20px;
+}
