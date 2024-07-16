@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
-import './MovieList.css';
+import './MovieList.css'
 
 //Fonction pour afficher la liste des films
 const MovieList = () => {
@@ -70,7 +70,7 @@ const MovieList = () => {
       <div className="film-container" ref={slider}>
         {movies.map(movie => (
           <div key={movie.id} className='poster-container'>
-            <Link to={`/MovieDetaillsPage/${movie.id}`}>
+            <Link to={`/MovieDetailsPage/${movie.id}`}>
             <img src={`${baseImageUrl}${movie.poster_path}`} alt={movie.title} draggable="false" />
             {/* <button>+</button> */}
             </Link>
