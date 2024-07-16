@@ -3,7 +3,8 @@
  color:var(--main-color);
 }
 
-.Hero h1{
+
+.Hero > h1{
     font-size: 7em;
     margin:0;
     
