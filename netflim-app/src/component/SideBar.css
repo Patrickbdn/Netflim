@@ -1,0 +1,33 @@
+/* src/Sidebar.css */
+.sidebar {
+    display:flex;
+    flex-direction: column;
+    width:30%;
+  }
+  
+  .sidebar h2 {
+    color: white;
+    text-align: left;
+  }
+  
+  .sidebar ul {
+    display:flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+        padding: 8px;
+    text-align: left;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #575757;
+  }

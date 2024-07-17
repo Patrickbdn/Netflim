@@ -21,4 +21,6 @@
         background-color: rgb(223, 222, 222);
         border-radius: 5%;
   }
-    
+
+.Profilcontainer
+{display:flex;}

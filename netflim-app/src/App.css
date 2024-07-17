@@ -9,3 +9,13 @@ body{
   --main-color: #F6F6F6;
   --complement-color : #E79800;
 }
+SideBar{
+  /* src/App.css */
+.App {display: flex;}
+
+.content 
+{   margin-left: 200px;
+    padding: 20px;
+    flex-grow: 1;}
+
+}

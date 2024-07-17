@@ -1,9 +1,13 @@
 import React from "react";
 import "./LoginPage.css";
 import { Link } from "react-router-dom";
+
+import Sidebar from './SideBar.jsx';
+
 export const LoginPage = () => {
     return(
         <div className="logincontainer">
+         
             <h1>Login Page</h1>
             <div className="loginpage">
             
