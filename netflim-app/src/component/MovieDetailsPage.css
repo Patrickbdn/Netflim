@@ -1,6 +1,11 @@
 body {
     z-index:-2;
 }
+.left-container img{
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 30px 8px rgba(0,0,0,0.72); 
+    box-shadow: 0px 0px 30px 8px rgba(0,0,0,0.72);
+}
 .movie-wrapper{
     display: flex;
     justify-content: space-between;
@@ -24,7 +29,7 @@ body {
     font-weight: bold;
 }
 .paragraph-syno{
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .right-container{
     display: flex;
@@ -39,4 +44,42 @@ body {
     width: 700px;
     filter: blur(150px);
     opacity: 0.7;
+}
+
+.movie-actor-list{
+    padding: 0;
+    width:90%;
+    display: flex;
+    gap:20px;
+}
+.movie-actor{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    color:var(--main-color);
+}
+.movie-actor img{
+    width: 100%;
+    border-radius: 5px;
+}
+.movie-director{
+    font-size: 1.5em;
+    margin:0;
+    font-weight: bold;
+}
+
+.custom-star{
+    color:var(--main-color);
+    margin: 20px;
+    font-size: 2em;
+}
+
+.custom-start::before{
+    color:var(--main-color);
+}
+.custom-star:active{
+    color:rgb(230, 195, 0);
+}
+.custom-star::after{
+    color:yellow;
 }
