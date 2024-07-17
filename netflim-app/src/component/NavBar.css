@@ -4,12 +4,12 @@ nav{
     align-items: center;
     padding: 40px 0;
 }
-ul{
+nav ul{
     display: flex;
     margin:0;
     padding: 0;
 }
-li{
+nav li{
     color:var(--main-color);
     margin-right: 50px;
     text-decoration: none;
