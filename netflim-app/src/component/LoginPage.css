@@ -8,7 +8,10 @@ justify-content: center;
 align-items: center;
 width:100%;
 gap:50px;} 
-.logincontainer{width:100%;}
+.logincontainer{
+	width:50%;
+	
+}
 .logininfo{display:flex;
     align-items: center;
     gap:25px;

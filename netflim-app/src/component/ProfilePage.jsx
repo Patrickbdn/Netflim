@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './ProfilePage.css';
 import './LoginPage.css';
 import imageprofile from '../asset/Profile-pic.jpeg';
+import './SideBar.css';
+import Sidebar from './SideBar.jsx';
 
 const ProfilePage = () => {
   const [email, setEmail] = useState('');
@@ -11,7 +13,11 @@ const ProfilePage = () => {
   };
 
   return (
+    <div className="Profilcontainer">
+<Sidebar/>
+
     <div className="logincontainer">
+    
       <h1>Pseudo</h1>
       <div className="Favoris">
       
@@ -45,7 +51,7 @@ const ProfilePage = () => {
     </div>;
     </div>
     </div>
-
+    </div>
   );
   
 
