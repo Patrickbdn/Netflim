@@ -9,7 +9,7 @@ align-items: center;
 width:100%;
 gap:50px;} 
 .logincontainer{
-	width:50%;
+	width:100%;
 	
 }
 .logininfo{display:flex;
