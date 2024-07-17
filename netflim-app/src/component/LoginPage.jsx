@@ -1,6 +1,6 @@
 import React from "react";
 import "./LoginPage.css";
-
+import { Link } from "react-router-dom";
 export const LoginPage = () => {
     return(
         <div className="logincontainer">
@@ -14,7 +14,9 @@ export const LoginPage = () => {
         </div> 
         <div className="logininfo"> <input type="email" placeholder="Votre email"/>
         <input type="Password" placeholder="Passwword"/> 
-        <button>Connexion</button></div> 
+        <Link to="/ProfilePage"><a href="#" class="myButton">
+        <button>Connexion</button></a></Link></div> 
+        
 
         </div>
     );
