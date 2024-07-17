@@ -6,6 +6,23 @@ body {
     -webkit-box-shadow: 0px 0px 30px 8px rgba(0,0,0,0.72); 
     box-shadow: 0px 0px 30px 8px rgba(0,0,0,0.72);
 }
+.left-container button{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: rgb(53, 53, 53);
+    border:none;
+    margin-top:30px;
+    transition:0.1s;
+}
+
+.left-container button:active{
+    transform: scale(1.1);
+    -webkit-box-shadow:0px 0px 89px 8px rgba(251,255,0,0.9);
+    -moz-box-shadow: 0px 0px 89px 8px rgba(251,255,0,0.9);
+    box-shadow: 0px 0px 89px 8px rgba(251,255,0,0.9);
+    
+}
 .movie-wrapper{
     display: flex;
     justify-content: space-between;
@@ -69,17 +86,12 @@ body {
 }
 
 .custom-star{
-    color:var(--main-color);
+    color:gray;
     margin: 20px;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin:0;
+    text-align: center;
 }
 
-.custom-start::before{
-    color:var(--main-color);
-}
-.custom-star:active{
-    color:rgb(230, 195, 0);
-}
-.custom-star::after{
-    color:yellow;
-}
+
+

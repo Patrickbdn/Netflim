@@ -7,6 +7,7 @@ const MovieDetailsPage = () => {
   const [movie, setMovie] = useState(null);
   const [cast, setCast] = useState([]);
   const [director, setDirector] = useState('');
+  const [isFavorite, setIsFavorite] = useState(false);
   const apiKey = '0ea6622414dacb5eff8f08858f745c6e';
   const baseImageUrl = 'https://image.tmdb.org/t/p/w300';
 
@@ -16,6 +17,7 @@ const MovieDetailsPage = () => {
     .then(data => {
       setMovie(data);
       console.log('Movie data:', data);
+      checkIfFavorite(data.id);
     })
     .catch(error => {
       console.error('Erreur lors de la récupération des détails du film:', error);
@@ -35,6 +37,33 @@ const MovieDetailsPage = () => {
     });
 }, [id, apiKey]);
 
+const checkIfFavorite = (movieId) => {
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  const isFav = favorites.some(favMovie => favMovie.id === movieId);
+  setIsFavorite(isFav);
+};
+
+const handleFavoriteClick = () => {
+  const favStarIcon = document.getElementById('fav-star');
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  if (isFavorite) {
+    const newFavorites = favorites.filter(favMovie => favMovie.id !== movie.id);
+    localStorage.setItem('favorites', JSON.stringify(newFavorites));
+    setIsFavorite(false);
+    favStarIcon.style.color = ''; // ou utilisez la couleur initiale que vous voulez
+  } else {
+    favorites.push({
+      id: movie.id,
+      title: movie.title,
+      poster_path: movie.poster_path,
+      release_date: movie.release_date
+    });
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+    setIsFavorite(true);
+    favStarIcon.style.color = 'yellow';
+  }
+};
+
 if (!movie) {
   return <div>Loading...</div>;
 }
@@ -46,7 +75,7 @@ if (!movie) {
     <div className='movie-wrapper' >
       <div className="left-container">
         <img src={`${baseImageUrl}${movie.poster_path}`} alt={movie.title} />
-        <i class="fa-solid fa-star custom-star"></i>
+        <button id="fav-star-button" onClick={handleFavoriteClick}><i id ="fav-star" class="fa-solid fa-star custom-star"></i></button>
       </div>
       <div className="right-container">
         <div className="movie-info-container">
@@ -89,5 +118,8 @@ if (!movie) {
     </div>
   );
 };
+
+
+
 
 export default MovieDetailsPage;
