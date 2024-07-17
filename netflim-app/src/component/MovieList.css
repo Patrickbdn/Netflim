@@ -12,7 +12,7 @@
     cursor: grab;
 }
 
-img{
+.poster-container img{
     width:150px;
     border-radius: 5px;
     transform: scale(0.95);
