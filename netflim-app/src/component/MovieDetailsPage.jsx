@@ -8,6 +8,7 @@ const MovieDetailsPage = () => {
   const [cast, setCast] = useState([]);
   const [director, setDirector] = useState('');
   const [isFavorite, setIsFavorite] = useState(false);
+  const [trailers, setTrailers] = useState([]);
   const apiKey = '0ea6622414dacb5eff8f08858f745c6e';
   const baseImageUrl = 'https://image.tmdb.org/t/p/w300';
 
@@ -35,6 +36,17 @@ const MovieDetailsPage = () => {
     .catch(error => {
       console.error('Erreur lors de la récupération du cast du film:', error);
     });
+
+    fetch(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${apiKey}&language=fr-FR`)
+          .then(response => response.json())
+          .then(trailersData => {
+            const trailersList = trailersData.results.filter(video => video.type === 'Trailer' && video.site === 'YouTube');
+            setTrailers(trailersList);
+            console.log('Video data :', trailersData);
+          })
+          .catch(error => {
+            console.error('Erreur lors de la récupération des trailers du film:', error);
+          });
 }, [id, apiKey]);
 
 const checkIfFavorite = (movieId) => {
@@ -76,12 +88,15 @@ if (!movie) {
       <div className="left-container">
         <img src={`${baseImageUrl}${movie.poster_path}`} alt={movie.title} />
         <button id="fav-star-button" onClick={handleFavoriteClick}><i id ="fav-star" class="fa-solid fa-star custom-star"></i></button>
+        
+        <button><i class="fa-solid fa-play custom-star"></i></button>
+        <i class="fa-solid fa-star custom-star"></i>
       </div>
       <div className="right-container">
         <div className="movie-info-container">
           <h1>{movie.title} </h1> 
           <p className='movie-director'>{director}</p>
-          <p> {movie.release_date} {movie.genres.map(genre => genre.name).join(' / ')}</p>
+          <p> {movie.release_date}, {movie.genres.map(genre => genre.name).join(' / ')}</p>
           <p>Note : {movie.vote_average}</p>
           
           {cast.length > 0 ? (
@@ -95,7 +110,7 @@ if (!movie) {
 
                   />
                 ) : (
-                  <div/>
+                  <div class="no-movie-actor"/>
                 )}
                 {actor.name}, {actor.character}
               </li>
