@@ -6,7 +6,7 @@ body {
     -webkit-box-shadow: 0px 0px 30px 8px rgba(0,0,0,0.72); 
     box-shadow: 0px 0px 30px 8px rgba(0,0,0,0.72);
 }
-.left-container button{
+#fav-star-button{
     height: 50px;
     width:50px;
     border-radius: 50%;
@@ -16,25 +16,7 @@ body {
     transition:0.1s;
 }
 
-.left-container button:active{
-    transform: scale(1.1);
-    -webkit-box-shadow:0px 0px 89px 8px rgba(251,255,0,0.9);
-    -moz-box-shadow: 0px 0px 89px 8px rgba(251,255,0,0.9);
-    box-shadow: 0px 0px 89px 8px rgba(251,255,0,0.9);
-    
-}
-.left-container button{
-    height: 50px;
-    width:50px;
-    border-radius: 50%;
-    background-color: rgb(53, 53, 53);
-    border:none;
-    margin-top:30px;
-    margin-right: 30px;
-    transition:0.1s;
-}
-
-.left-container button:active{
+#fav-star-button button:active{
     transform: scale(1.1);
     -webkit-box-shadow:0px 0px 89px 8px rgba(251,255,0,0.9);
     -moz-box-shadow: 0px 0px 89px 8px rgba(251,255,0,0.9);
@@ -104,7 +86,7 @@ body {
 
 .custom-star{
     color:gray;
-    margin: 20px;
+    margin:0;
     font-size: 2em;
 }
 
@@ -123,4 +105,38 @@ body {
     width: 130px;
     border-radius: 10px;
 }
+#add-fav-dialog::backdrop{
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+#add-fav-dialog{
+    border:none;
+    border-radius:10px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    box-shadow: 0px 0px 78px 90px rgba(0,0,0,0.1);
 
+}
+
+#add-fav-dialog.show{
+    opacity: 1;
+    transform: scale(1);
+}
+#add-fav-dialog p{
+    color:var(--bg-color);
+}
+
+#add-fav-dialog::before{
+    background-color: transparent;
+}
+
+
+.closedialog{
+    border: none;
+    background-color: transparent;
+}
+.closedialog :hover{
+    cursor: pointer;
+}
