@@ -8,6 +8,7 @@ body{
   --bg-color: #282828;
   --main-color: #F6F6F6;
   --complement-color : #E79800;
+  scrollbar-width: none;
 }
 SideBar{
   /* src/App.css */
