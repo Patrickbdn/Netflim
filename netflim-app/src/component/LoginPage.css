@@ -1,25 +1,34 @@
-.logincontainer h1 
-    {color: var(--main-color);
-	}
 
-.loginpage p
-    {color:var(--main-color);}
-   .loginpage {display:flex;
-justify-content: center;
-align-items: center;
-width:100%;
-gap:50px;} 
+.logincontainer h1 {
+	color: var(--main-color);
+}
+
+.loginpage p{
+	color:var(--main-color);
+}
+.loginpage {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	gap:50px;
+} 
 .logincontainer{
 	width:100%;
-	
 }
-.logininfo{display:flex;
-	margin-top:30px;
+
+.logininfo{
+	margin-top:20px;
+	display:flex;
     align-items: center;
     gap:25px;
-flex-direction:column;}
-.logininfo input{width: 30%;
-padding: 10px;}
+	flex-direction:column;
+}
+.logininfo button{width: 20%;}
+.logininfo input{
+	width: 30%;
+	padding:10px;
+	margin:0;}
 
 
 .logininfo button {
@@ -27,8 +36,9 @@ padding: 10px;}
 	border-radius:28px;
 	border:1px solid var(--main-color);
 	display:center;
+
 	cursor:pointer;
-	color:#060606;
+	color: var(--bg-color);
 	font-family:Arial;
 	font-size:17px;
 	padding:7px 100px;

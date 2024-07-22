@@ -19,8 +19,7 @@ export const LoginPage = () => {
         <div className="logininfo"> <input type="email" placeholder="Votre email"/>
         <input type="Password" placeholder="Passwword"/> 
         <Link to="/ProfilePage"><a href="#" class="myButton">
-        <button>Connexion</button></a></Link></div> 
-        
+        <button>Connexion</button></a></Link></div>
 
         </div>
     );

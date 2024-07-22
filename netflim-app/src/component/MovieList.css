@@ -13,6 +13,7 @@
 
 .poster-container img{
     width:150px;
+    height: 220px;
     border-radius: 5px;
     transform: scale(0.95);
     transition: 0.3s;
