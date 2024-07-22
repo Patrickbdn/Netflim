@@ -1,26 +1,50 @@
-.logincontainer h1 
-    {color: white;}
-.Profilepage p
-    {color:white;}
-.Profilepage {display:flex;
-    justify-content: center;}
-.email{display:flex;}
-.imageprofile{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  }
-.Favoris h3 
-    {color: white;}
-.mignaturesfilmscontainer{
-    display:flex;gap: 8px;}
-.mignaturesfilms{
-     
-        width: 50px;
-        height: 50px;
-        background-color: rgb(223, 222, 222);
-        border-radius: 5%;
-  }
+.profil-page-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    gap:40px;
+    margin-top:40px;
+}
 
-.Profilcontainer
-{display:flex;}
+.sidebar-border{
+    width:2px;
+    height: 80vh;
+    background-color: grey;
+}
+.Profilcontainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.profil-page-info{
+    display: flex;
+}
+.profil-page-info img{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+}
+.profil-page-pseudo-mail{
+    margin-left: 10px;
+}
+.profil-page-pseudo-mail :first-child{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.fav-container{
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+}
+.fav-movie-list{
+    display: flex;
+    gap:10px;
+}
+.favorite-movie{
+    width: 10%;
+}
+.favorite-movie img{
+    width: 100%;
+}
