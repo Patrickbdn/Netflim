@@ -9,7 +9,7 @@ const MovieList = () => {
   const baseImageUrl = 'https://image.tmdb.org/t/p/w500';
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=fr-FR&page=1`)
+    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=fr-FR&page=1`)
       .then(response => response.json())
       .then(data => {
         setMovies(data.results);
