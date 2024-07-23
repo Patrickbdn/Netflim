@@ -79,3 +79,13 @@
     
 
 }
+
+@media screen and (max-width:600px) {
+    span{
+        display: none;
+    }
+    .profil-page-info img{
+        width: 100px;
+        height: 100px;
+    }
+}

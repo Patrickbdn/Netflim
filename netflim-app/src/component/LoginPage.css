@@ -77,3 +77,28 @@
     z-index: -2;
     background: radial-gradient(ellipse, transparent 10%, var(--bg-color) 65%);
 }
+
+@media screen and (max-width:600px) {
+	.logincontainer h1{
+		padding: 0 10px;
+	}
+	.loginpage{
+		padding: 0;
+		gap:20px ;
+		margin-top:50px;
+	}
+	.login-cover-bg-img, .login-bg-img{
+		display: none;
+	}
+	.logininfo{
+		margin-top:50px;
+		gap:50px;
+	}
+	.logininfo input{
+		width: 90%;
+	}
+	.logininfo button {
+		width: 100%;
+		text-align: center;
+	}
+}

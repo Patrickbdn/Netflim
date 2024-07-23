@@ -38,3 +38,32 @@ a{
 .right-nav input, i{
     margin-left:30px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    nav{
+        margin: 30px 0;
+        box-sizing: border-box;
+        padding:0 10px;
+    }
+    nav li {
+        border:2px solid white;
+        border-radius: 10px;
+        padding: 5px;
+        margin:0 5px;
+        font-size: 0.7em;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+    }
+
+    .right-nav{
+        display: none;
+    }
+    
+
+  }
+
