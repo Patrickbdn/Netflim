@@ -26,22 +26,20 @@
 }
 
 .bg-img{
-    background-image:url('../asset/Film-Review-Christopher-Nolan-Oppenheimer.jpg');
-    background-size: cover;
     position:absolute;
-    width: 800px;
+    width: 1632px;
     height: 600px;
-    top:7px;
-    left:460px;
+    top:17px;
+    left:-120px;
     z-index: -3;
 }
 
 .cover-bg-img{
     position:absolute;
-    width: 800px;
+    width: 1188px;
     height: 600px;
-    top:7px;
-    left:460px;
+    top:17px;
+    left:98px;
     z-index: -2;
-    background: radial-gradient(ellipse, transparent 8%, var(--bg-color) 65%);
+    background: radial-gradient(ellipse, transparent 8%, var(--bg-color) 58%);
 }

@@ -13,8 +13,9 @@ export const HomePage =() => {
       <h1>NETFLIM</h1>
       <span></span>
       <div className="cover-bg-img"></div>
-      <div className="bg-img"></div>
-      <p>Des milliers de films, de séries et documentaires accessibles depuis partout ! Et tout ça sans vous faire voler par Netflix</p>
+      <video className="bg-img" autoPlay loop muted>
+      <source src="/oppenheimer_trailer.mp4" type="video/mp4"></source>
+      </video>
     </div>
     <MovieList/>
     </>
