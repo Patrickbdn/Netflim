@@ -33,3 +33,9 @@
   .sidebar ul li a:hover {
     background-color: #575757;
   }
+
+  @media screen and (max-width:600px) {
+    .sidebar{
+        display: none;
+    }
+}

@@ -5,6 +5,7 @@ import LoginPage from './component/LoginPage';
 import ProfilePage from './component/ProfilePage';
 import MovieDetailsPage from './component/MovieDetailsPage';
 import NavBar from './component/NavBar';
+import BottomBar  from './component/BottomBar';
 import SideBar from './component/SideBar';
 import './App.css';
 
@@ -13,6 +14,7 @@ const App = () => {
     <>
       <div>
         <NavBar />
+        <BottomBar/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/LoginPage" element={<LoginPage />} />

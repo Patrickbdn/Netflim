@@ -14,13 +14,17 @@ export const LoginPage = () => {
                 <p>|</p>
                 <p>Création de compte</p>
                 
+            </div>
+        <div className="login-cover-bg-img">
         </div>
-        <div className="login-cover-bg-img"></div>
-        <div className="login-bg-img"></div>
-        <div className="logininfo"> <input type="email" placeholder="Votre email"/>
-        <input type="Password" placeholder="Passwword"/> 
-        <Link to="/ProfilePage"><a href="#" class="myButton">
-        <button>Connexion</button></a></Link></div>
+        <div className="login-bg-img">
+        </div>
+        <div className="logininfo"> 
+            <input type="email" placeholder="Votre email"/>
+            <input type="Password" placeholder="Passwword"/> 
+            <Link to="/ProfilePage"><a href="#" class="myButton">
+            <button>Connexion</button></a></Link>
+        </div>
 
         </div>
     );

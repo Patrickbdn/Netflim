@@ -45,3 +45,33 @@ button{
     font-weight: bold;
 } */
 
+@media screen and (max-width:600px) {
+.content{
+    margin:0;
+    margin-bottom:80px;
+    padding-left:10px;
+}
+.film-container{
+    display: flex;
+    box-sizing: content-box;
+    margin-top: 0px;
+    gap:10px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 0;
+}
+.poster-container img{
+    width:200px;
+    height: 300px;
+}
+.recent-film-bkdrop{
+    position: absolute;
+    z-index: -2;
+    filter: blur(60px);
+    opacity: 0.8
+    ;
+    top:200px;
+    width: 100%;
+}
+}

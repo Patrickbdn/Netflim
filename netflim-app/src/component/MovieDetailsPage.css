@@ -140,3 +140,57 @@ body {
 .closedialog :hover{
     cursor: pointer;
 }
+
+@media screen and (max-width:600px) {
+    .movie-wrapper{
+        display: block;
+    }
+    .left-container{
+        padding: 0 10px;
+    }
+    .left-container img {
+        width: 100%;
+        height: 250px;
+        object-fit:cover;
+        border-radius: 20px;
+        padding: 0;
+    }
+    .custom-star{
+        font-size: 1.5em;
+    }
+    #fav-star-button{
+        margin-top:0;
+        position: relative;
+        top:-60px;
+        left:5px;
+        background: rgba(0,0,0,0.5);
+
+    }
+    .movie-info-container{
+        padding: 0 10px;
+    margin-top:-40px;
+    }
+    .movie-info-container h1 {
+        font-size: 1.5em;
+    }
+    .movie-info-container p{
+        margin-top: 10px;
+        font-size: 1em;
+    }
+    .movie-actor-list{
+        display: none;
+    }
+    .movie-synopsis{
+        padding: 0 10px;
+        margin-bottom: 80px;
+    }
+    .background-img-movie{
+        position: absolute;
+        top:100px;
+        left:0;
+        width: 100%;
+    }
+    .background-img-movie img{
+        width: 300px;
+    }
+}

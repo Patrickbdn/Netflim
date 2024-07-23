@@ -43,3 +43,48 @@
     z-index: -2;
     background: radial-gradient(ellipse, transparent 8%, var(--bg-color) 58%);
 }
+
+.recent-film-container{
+    display:none;
+}
+@media screen and (max-width: 600px){ 
+    .Hero{
+        padding:0 10px;
+    }
+    .Hero h1 {
+        display:none;
+    }
+    .Hero h2 {
+        font-size: 2em;
+    }
+    .bg-img{
+        display: none;
+    }
+
+    .cover-bg-img{
+        display: none;
+    }
+    .Hero span{
+        display: none;
+    }
+    .recent-film-container{
+        display: flex;
+        justify-content: center;
+    }
+    .recent-film-poster{
+        width: 100%;
+    }
+    .recent-film-poster img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    .recent-film-poster h2{
+        font-size: 1em;
+        position: relative;
+        bottom:50px;
+        left:20px;
+        filter: drop-shadow(3px 3px 2px #000000);
+    }
+}

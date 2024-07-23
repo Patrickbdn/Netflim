@@ -21,3 +21,8 @@ SideBar{
     flex-grow: 1;}
 
 }
+@media screen and (max-width:600px) {
+    body{
+      padding: 0;
+    }
+}
