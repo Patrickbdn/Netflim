@@ -15,7 +15,7 @@ const ProfilePage = () => {
   }, []);
 
   const showMoreMovies = () => {
-    setNumMoviesToShow(numMoviesToShow + 5); // Augmente le nombre de films affichés par 5
+    setNumMoviesToShow(numMoviesToShow + 20); // Augmente le nombre de films affichés par 5
   };
 
   return (

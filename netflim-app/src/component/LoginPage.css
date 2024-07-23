@@ -65,6 +65,7 @@
     top:7px;
     left:460px;
     z-index: -3;
+	opacity: 0.5;
 }
 
 .login-cover-bg-img{
